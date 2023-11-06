@@ -1,6 +1,6 @@
-// Function to navigate to "GUI.html"
+
     function navigateToPs() {
-        // Use JavaScript to change the URL to GUI.html
+
         console.log("Button clicked");
         window.location.href = '/www/PortScan.html';
 
