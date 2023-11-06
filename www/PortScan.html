@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width,initial-scale=2">
     <meta charset="UTF-8">
     <title>networkScanner</title>
-    <link rel="stylesheet2" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <header>
-    <h1>Port Scanner</h1>
-    <h2>----------------------</h2>
+    <div class="logoPS-container">
+        <img src="img/Pscanner.png" alt="Logo" width="600" height="300">
+    </div>
+    <h2>---------------------------------------------------------------------------</h2>
 </header>
 
-<main>
+<div>
     <label for="IpAddress">IP Address:</label>
     <input type="number" id="IpAddress" placeholder="Enter an IP">
 
     <label for="SubnetMask">Subnet Mask:</label>
     <input type="number" id="SubnetMask" placeholder="Enter a Subnet Mask">
+</div>
 
-</main>
-
-<main>
-
+<div>
     <label for="startingPort">Starting Port :</label>
     <input type="number" id="StartingPort" placeholder="Enter Starting Port">
 
-    <label for="startingPort">Ending Port :</label>
+    <label for="endingPort">Ending Port :</label>
     <input type="number" id="EndingPort" placeholder="Enter Ending Port">
+</div>
 
-</main>
-
-<main>
-
+<div>
     <button id="scanButton">Scan</button>
-
-
-    <button id="goToIndexButton">Go Back to Index.html</button>
-
-    <div id="resultArea"></div>
-
-</main>
-
-
+    <button id="goToIndexButton">Go Back Home</button>
+</div>
 
 <script src="js/goToIndex.js"></script>
-
 </body>
 </html>
