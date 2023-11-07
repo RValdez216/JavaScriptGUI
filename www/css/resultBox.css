@@ -1,0 +1,23 @@
+body {
+        background-color: black;
+        color: green;
+      }
+
+ #resultsContainer {
+        height: 200px;
+        overflow-y: auto;
+      }
+      .result-box {
+        border: 20px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: black;
+        color: green;
+      }
+      .selected-result {
+        background-color: yellow;
+      }
+ logoPS-container {
+position: center, center;
+  top: 20px; /* Adjust the value to control the vertical position */
+}

@@ -33,23 +33,30 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>SumCalculator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=2">
+    <title>networkScanner</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <script src="cordova.js"></script>
+<script src="PortScan.html"></script>
 <script src="js/index.js"></script>
+<!-- Add an image to index.html -->
+<div class="logo-container">
+    <img src="img\WelcomeHome.png" alt="Logo" width="600" height="300">
+</div>
 
-<!-- Add a button to navigate to "GUI.html" -->
-<button onclick="navigateToGUI()">Go to GUI Page</button>
 
-<script>
-        // Function to navigate to "GUI.html"
-        function navigateToGUI() {
-            // Use Cordova's InAppBrowser plugin to open "GUI.html"
-            var ref = cordova.InAppBrowser.open('https://localhost:8000/GUI.html', '_blank', 'location=yes');
-        }
-    </script>
+
+
 </body>
 </html>
+<h2>
+    <button id="navigateToPs">Port Scanner</button>
+    <button id="goToPing">Go to Pinger</button>
+
+
+    <script src="js/navigateToPs.js"></script>
+    <script src="js/goToPing.js"></script>
+
+</h2>

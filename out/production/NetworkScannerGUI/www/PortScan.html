@@ -8,7 +8,7 @@
     <meta name="color-scheme" content="light dark">
     <meta charset="UTF-8">
     <title>networkScanner</title>
-    <link rel="stylesheet" href="css/resultBox.css">
+    <link rel="stylesheet" href="www/index.css">
 </head>
 <body>
 <header>
@@ -19,21 +19,14 @@
 </header>
 
 <div>
-
     <label for="IpAddress">IP Address:</label>
     <input type="text" id="IpAddress" placeholder="Enter an IP">
 
     <label for="SubnetMask">Subnet Mask:</label>
     <input type="text" id="SubnetMask" placeholder="Enter a Subnet Mask">
 </div>
-<div>
-    <label for="HostName">Host Name:</label>
-    <input type="text" id="HostName" />
-</div>
 
 <div>
-
-
     <label for="StartingPort">Starting Port :</label>
     <input type="number" id="StartingPort" placeholder="Enter Starting Port" value="0" min="0" max="65536">
 
@@ -46,20 +39,7 @@
     <button id="goToIndexButton">Go Back Home</button>
 </div>
 
-<div>
-    <label for="resultRef">Select Result:</label>
-    <select id="resultRef"></select>
-</div>
-<div id="resultsContainer" class="result-box">
-    <ul>
-        <!-- Results will be dynamically added here -->
-    </ul>
-</div>
-
-
-<div id="resultArea">
-    <!-- The result area for displaying dynamic results -->
-</div>
+<div id="resultArea"></div>
 
 <script src="js/goToIndex.js"></script>
 <script src="js/portResults.js"></script>
