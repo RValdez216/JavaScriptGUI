@@ -12,10 +12,10 @@ body {
         padding: 10px;
         margin-bottom: 10px;
         background-color: black;
-        color: green;
+        color: lawngreen;
       }
       .selected-result {
-        background-color: yellow;
+        color: white;
       }
  logoPS-container {
 position: center, center;
