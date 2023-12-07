@@ -8,7 +8,7 @@ function displayResult(messages, hostName) {
   resultList.style.listStyleType = "none"; // Remove the default list bullet points
 
   var listItem = document.createElement("li");
-  listItem.innerHTML = "Host " + (scanResults.length + 1) + "<br/>" + "Host Name: " + hostName + "<br/>" + messages.join("<br/>");
+  listItem.innerHTML = "Scanned Host # " + (scanResults.length + 1) + "<br/>" + "Host Name: " + hostName + "<br/>" + messages.join("<br/>");
   resultList.appendChild(listItem);
 
   newContent.appendChild(resultList);

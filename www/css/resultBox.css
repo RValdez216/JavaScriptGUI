@@ -1,23 +1,19 @@
-body {
-        background-color: black;
-        color: green;
-      }
 
- #resultsContainer {
-        height: 200px;
-        overflow-y: auto;
-      }
-      .result-box {
-        border: 20px solid #ccc;
-        padding: 10px;
-        margin-bottom: 10px;
-        background-color: black;
-        color: lawngreen;
-      }
-      .selected-result {
-        color: white;
-      }
- logoPS-container {
-position: center, center;
-  top: 20px; /* Adjust the value to control the vertical position */
+#resultsContainer {
+    flex: 1;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 50%; /* Set the height to 50% to take up the bottom half */
+}
+
+.result-box {
+    border: 10px solid #ccc; /* Reduce the border size */
+    padding: 5px; /* Reduce the padding */
+    margin-bottom: 5px; /* Reduce the margin */
+    background-color: black;
+    color: lawngreen;
+}
+
+.selected-result {
+    color: white;
 }

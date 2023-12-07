@@ -1,5 +1,38 @@
-First attempt at Javscript and HTML on Cordova
+Here's my Attempt at a GUI in Javascript.
 
-I had the index.html file and the GUI.HTML file working perfectly.
-I had it running some test code using an additon calculator.
-Idk what happened but now everything is red.
+Theres a Main Home screen to help navigate through the other webpages.
+There is a Port Scan screen to scan ports and it dynamically adds host to a result area and a combo box.
+When a host is selected through the combo box it will be highlighted white ti make it easier to see.
+The Ping screen is there but currently not functioning.
+
+I had issues with the Css but the Javscript was alot easier to learn. Html is also pretty straightfoward.
+
+The main code I have is just procedural, Its doesnt have a design pattern. I wanted to include the Facade and proxy pattern but Ran out of time.
+The proxy pattern would have add a lazy loading bar to proxy the scan results.
+I tried adding a proxy to the ping results but couldnt quite figure it out.
+The facade pattern was going to be used through a rest client. I would use a fetch call to get the logic for the GUI to add it through a Facade.
+
+
+Encapsulation:
+The displayResult function encapsulates the logic for displaying scan results on the webpage.
+It takes care of creating and updating the DOM elements related to the results. This function encapsulates the implementation details, providing a clear interface for displaying results.
+
+State Management:
+The scanResults array is used to store unique identifiers for each scan result.
+It serves as a form of state management for the application.
+The array is updated within the displayResult function.
+
+Reusability:
+The displayResult function is reusable, as it can be called multiple times to display different scan results.
+This promotes a modular and reusable approach to handling the display of results.
+
+Event Handling:
+The event handling code for the dropdown (resultRef) and the scan button is well-organized,
+ which aligns with the concept of handling events in an object-oriented manner.
+
+
+ I had issues getting my code to work with electron and bootstrap,
+ so I just left it in cordova and tried my best with the CSS.
+
+ Overall it was really fun learning Javascript and making the network scanner has just been a really cool project.
+ I plan on working on it in the future beyond the class with Aidan.
