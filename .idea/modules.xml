@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NetworkScannerGUI.iml" filepath="$PROJECT_DIR$/.idea/NetworkScannerGUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaScriptGUI.iml" filepath="$PROJECT_DIR$/.idea/JavaScriptGUI.iml" />
     </modules>
   </component>
 </project>
