@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Content Security Policy (CSP) to restrict resource loading -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+
+    <!-- Meta tags for various settings -->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
     <meta charset="UTF-8">
+
+    <!-- Title and linked stylesheet -->
     <title>networkScanner</title>
     <link rel="stylesheet" href="css/resultBox.css">
+
+    <style>
+        body {
+            background-color: black;
+            color: lawngreen;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logoPS-container {
+            text-align: center;
+            margin-top: 40px;
+            background-image: url('img/PScanner.png'); /* Set the background image */
+            background-size: cover; /* Ensure the background image covers the entire container */
+            background-position: center; /* Center the background image */
+            padding: 40px; /* Add padding as needed */
+        }
+    </style>
 </head>
 <body>
-<header>
-    <div class="logoPS-container">
-        <img src="img/Pscanner.png" alt="Logo" width="600" height="300">
-        <h2>---------------------------------------------------------------------------</h2>
-    </div>
-</header>
+<!-- Logo container -->
+<div class="logoPS-container">
+    <!-- Logo image -->
+    <img src="img/PScanner.png" alt="Logo" width="600" height="300">
+</div>
 
+<!-- User input section with labels and input fields -->
 <div>
-
     <label for="IpAddress">IP Address:</label>
     <input type="text" id="IpAddress" placeholder="Enter an IP">
 
     <label for="SubnetMask">Subnet Mask:</label>
     <input type="text" id="SubnetMask" placeholder="Enter a Subnet Mask">
 </div>
+
 <div>
     <label for="HostName">Host Name:</label>
     <input type="text" id="HostName" />
 </div>
 
 <div>
-
-
+    <!-- Port range input section -->
     <label for="StartingPort">Starting Port :</label>
     <input type="number" id="StartingPort" placeholder="Enter Starting Port" value="0" min="0" max="65536">
 
@@ -42,25 +68,29 @@
 </div>
 
 <div>
+    <!-- Scan and navigation buttons -->
     <button id="scanButton">Scan</button>
     <button id="goToIndexButton">Go Back Home</button>
 </div>
 
 <div>
+    <!-- Result selection dropdown -->
     <label for="resultRef">Select Result:</label>
     <select id="resultRef"></select>
 </div>
+
+<!-- Container for displaying dynamic results -->
 <div id="resultsContainer" class="result-box">
     <ul>
         <!-- Results will be dynamically added here -->
     </ul>
 </div>
 
-
 <div id="resultArea">
     <!-- The result area for displaying dynamic results -->
 </div>
 
+<!-- Scripts for handling navigation and displaying results -->
 <script src="js/goToIndex.js"></script>
 <script src="js/portResults.js"></script>
 </body>

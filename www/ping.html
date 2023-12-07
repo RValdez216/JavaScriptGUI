@@ -4,38 +4,87 @@
     <meta charset="UTF-8">
     <title>networkScanner</title>
     <link rel="stylesheet " type="text/css" href="css/ping.css"> <!-- CSS file for styling -->
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('img/Pinger.png'); /* Set the background image */
+            background-size: cover; /* Ensure the background image covers the entire viewport */
+            background-position: center; /* Center the background image */
+            font-family: Arial, sans-serif; /* Specify a fallback font family */
+            display: flex;
+            flex-direction: column;
+            height: 50vh; /* Set height to 50% of viewport height */
+        }
+
+        header {
+            text-align: center; /* Center the content horizontally */
+            margin-top: 20px; /* Adjust the value to control the vertical position */
+            color: white; /* Adjust text color as needed */
+        }
+
+        .logoPS-container img {
+            width: 600px; /* Adjust the width as needed */
+            height: 300px; /* Adjust the height as needed */
+        }
+
+        main {
+            text-align: center; /* Center the content horizontally */
+            color: white; /* Adjust text color as needed */
+        }
+
+        label {
+            display: block; /* Make labels display as blocks for better spacing */
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .result-Area {
+    background-color: black;
+    color: lawngreen;
+    margin-top: 40px;
+    padding: 40px;
+}
+    </style>
 </head>
 <body>
 <header>
     <div class="logoPS-container">
-        <img src="img/Pinger.png" alt="Logo" width="600" height="300">
     </div>
-    <h2>---------------------------------------------------------------------------</h2>
 </header>
 
 <main>
-    <!-- Your ping elements go here -->
+    <!-- Your ping variables go here -->
     <label for="IpAddress">IP Address:</label>
     <input type="double" id="IpAddress" placeholder="Enter an IP">
 
     <label for="SubnetMask">Subnet Mask:</label>
     <input type="double" id="SubnetMask" placeholder="Enter a Subnet Mask">
-
 </main>
-
-
 
 <main>
-
     <button id="scanButton">Scan</button>
-
-
     <button id="goToIndexButton">Go Back Home</button>
-
 </main>
 
+<div id="resultArea" class="result-Area">
+    <!-- The result area for displaying dynamic results -->
+</div>
+
 <script src="js/goToIndex.js"></script>
-<script>
-</script>
+<script src="js/pingResults.js"></script>
 </body>
 </html>

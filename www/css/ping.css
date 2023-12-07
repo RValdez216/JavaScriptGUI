@@ -1,8 +1,15 @@
-#logoPS-container {
-    /* Your styles for #logoPS-container go here */
+#result-Area{
 }
 
 body {
     background: url("img/Pinger.png") no-repeat center center fixed;
-    /* Additional body styles can be added here */
+    }
+
+    .logoPS-container {
+                text-align: center;
+                margin-top: 40px;
+                background-image: url('img/PScanner.png'); /* Set the background image */
+                background-size: cover; /* Ensure the background image covers the entire container */
+                background-position: center; /* Center the background image */
+                padding: 40px; /* Add padding as needed */
 }
